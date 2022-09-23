@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid nav-box d-flex">
+      <div class="header-nav d-flex">
+        <img
+          src="imgs/Netflix_Logo_RGB.png"
+          alt="netflix-logo"
+          class="netflix-logo"
+        />
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link active" aria-current="page" href="#">Tv Shows</a>
+        <a class="nav-link">Movies</a>
+        <a class="nav-link">Recently Added</a>
+        <a class="nav-link">My List</a>
+      </div>
+      <div class="header_side-links d-flex">
+        <svg class="header_side-icon">
+          <use xlink:href="imgs/sprite.svg#icon-search"></use>
+        </svg>
+
+        <span class="kids">KIDS</span>
+        <svg class="header_side-icon">
+          <use xlink:href="imgs/sprite.svg#icon-bell1"></use>
+        </svg>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-none dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="imgs/WhatsApp Image 2022-08-04.jpeg"
+              alt="user-img"
+              class="user-img"
+            />
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid nav-box2 d-flex">
+      <div class="tvshow-nav d-flex">
+        <h4 class="tvshows">TV Shows</h4>
+        <div class="dropdown tvshow-nav-dropdown">
+          <button
+            class="btn p-1 btn-outline-light dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Drama</a></li>
+            <li><a class="dropdown-item" href="#">Cartoon</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <button class="btn p-0 btn-outline-light list">
+          <svg class="tvshow-view-icon">
+            <use xlink:href="imgs/sprite.svg#icon-list"></use>
+          </svg>
+        </button>
+        <button class="btn p-0 btn-outline-light grid">
+          <svg class="tvshow-view-icon">
+            <use xlink:href="imgs/sprite.svg#icon-grid"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <section class="container-fluid trend-gallery">
+      <h5 class="gallery-subheading">Trending Now</h5>
+      <div class="trending-now-gallery">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex">
+                <img src="imgs/movies/1.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/2.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/3.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+                <img src="imgs/movies/4.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/5.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/6.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+                <img src="imgs/movies/7.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/8.png" class="d-block w-100" alt="..." />
+                <img src="imgs/movies/9.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid watch-again-gallery">
+        <h5 class="gallery-subheading">Watch It Again</h5>
+        <div class="trending-now-gallery">
+          <div
+            id="carouselExampleIndicator"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicator"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicator"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicator"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+                  <img src="imgs/movies/10.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/11.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/12.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="imgs/movies/13.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/14.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/15.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="imgs/movies/16.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/17.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/18.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicator"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicator"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid new-release-gallery">
+        <h5 class="gallery-subheading">New Releases</h5>
+        <div class="trending-now-gallery">
+          <div
+            id="carouselIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex">
+                  <img src="imgs/movies/1.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/2.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/3.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="imgs/movies/4.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/5.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/6.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex">
+                  <img src="imgs/movies/7.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/8.png" class="d-block w-100" alt="..." />
+                  <img src="imgs/movies/9.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container social-media">
+             <svg class="footer-icon">
+                <use xlink:href="imgs/sprite.svg#icon-facebook"></use>
+              </svg>
+              <svg class="footer-icon">
+                <use xlink:href="imgs/sprite.svg#icon-instagram"></use>
+              </svg>
+              <svg class="footer-icon">
+                <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
+              </svg>
+              <svg class="footer-icon">
+                <use xlink:href="imgs/sprite.svg#icon-youtube"></use>
+              </svg>
+        </div>
+        <div class="container">
+            <table>
+                <tr class="footer-row" >
+                    <td class="footer-data" >Audio and Subtitles</td>
+                    <td class="footer-data">Audio Description</td>
+                    <td class="footer-data">Help Center</td>
+                    <td class="footer-data">Gift Cards</td>
+                </tr>
+                <tr class="footer-row">
+                    <td class="footer-data">Media Center</td>
+                    <td class="footer-data">Investor Relations</td>
+                    <td class="footer-data">Jobs</td>
+                    <td class="footer-data">Terms of Use</td>
+                </tr>
+                <tr class="footer-row">
+                    <td class="footer-data">Privacy</td>
+                    <td class="footer-data">Legal Notices</td>
+                    <td class="footer-data">Cookie Preferences</td>
+                    <td class="footer-data">Corporate Information</td>
+                </tr>
+                <tr class="footer-row">
+                    <td class="footer-data">Contact Us</td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="service">
+            <button class="btn p-0 btn-outline-light service-code-btn">
+                Service Code
+            </button>
+            <div class="container copyright-box" >
+            <svg class="copyright-icon">
+                <use xlink:href="imgs/sprite.svg#icon-copyright"></use>
+                
+              </svg>
+              <span>
+                2022 Netflix, Inc (Austine Uwumwonse)
+              </span>
+            </div>
+        </div>
+      </footer>
+  </body>
+</html>

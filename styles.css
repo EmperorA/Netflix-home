@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(18, 17, 17);
+    color: #fff;
+}
+
+/* header  */
+.header-nav{
+padding: 0.5rem;
+margin-right: auto;
+
+
+}
+.netflix-logo{
+    height: 2rem;
+    width: 5rem;
+}
+
+.nav-link{
+    color: rgb(186, 179, 179);
+    padding: 0.5rem 0.5rem 0rem 0;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.header_side-links{
+padding: 0.5rem;
+font-size: 0.5rem;
+align-items: center;
+}
+.header_side-icon{
+    fill: rgb(213, 208, 208);
+    height: 0.7rem;
+    width: 1rem;
+    margin:0  0.6rem;
+
+    
+}
+.header-user-icon{
+    height: 0.7rem;
+    width: 1rem;
+    fill: rgb(213, 208, 208);
+    align-items: center;
+
+}
+.user-img{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 10%;
+}
+.user-btn{
+    border: none;
+    text-align: center;
+}
+.dropdown{
+    color: #fff;
+}
+
+/* second nav bar  */
+.nav-box2{
+    margin: 1rem;
+}
+.tvshow-nav{
+margin-right: auto;
+}
+.tvshows{
+    padding-right: 2rem;
+}
+.nav-btn{
+    padding-right: 2rem;
+}
+.btn-outline-light{
+   border-width: 0.3px;
+   color: rgb(152, 145, 145);
+   border-color: rgb(88, 83, 83);
+   border-radius: 0;
+   font-size: 0.5rem;
+   font-weight: 700;
+}
+.tvshow-view-icon{
+    height: 0.8rem;
+    width: 1rem;
+    fill: rgb(88, 83, 83);
+}
+
+/* Gallery */
+.trend-gallery, .watch-again-gallery{
+    margin-bottom: 2rem;
+    
+}
+.gallery-subheading{
+    font-size: 0.8rem;
+}
+
+/* footer  */
+footer{
+    color: rgb(98, 91, 91);
+    font-size: 0.5rem;
+}
+.footer-icon{
+    fill: rgb(98, 91, 91);
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 6rem 1rem 1rem 0;
+    
+    
+}
+.footer-row{
+    -bottom: 2rem;
+}
+.footer-data{
+    padding-right: 4rem;
+    padding-bottom: 0.5rem;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+}
+.service-code-btn{
+    padding: 1rem;
+}
+.copyright-icon{
+    display: ;
+    height: 0.5rem;
+    width: 0.5rem;
+    fill: rgb(98, 91, 91);
+}
+.copyright-box{
+    text-align: center;
+}
