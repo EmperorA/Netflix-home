@@ -95,6 +95,7 @@ margin-right: auto;
 footer{
     color: rgb(98, 91, 91);
     font-size: 0.5rem;
+    margin-left: 10rem;
 }
 .footer-icon{
     fill: rgb(98, 91, 91);
@@ -118,12 +119,22 @@ footer{
 .service-code-btn{
     padding: 1rem;
 }
-.copyright-icon{
-    display: ;
-    height: 0.5rem;
-    width: 0.5rem;
-    fill: rgb(98, 91, 91);
-}
+
 .copyright-box{
-    text-align: center;
+    margin: 1rem 0;
+display: flex;
+
 }
+.copyright-icon{
+    text-align: center;
+     height: 0.5rem;
+     width: 0.5rem;
+     fill: rgb(98, 91, 91);
+     align-self: center;
+     
+ }
+ .copyright-box span{
+    padding-left: 0.2rem;
+    padding-top: 0.8px;
+   
+ }
